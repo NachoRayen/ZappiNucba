@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header{
+    background-color: #131415;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px;
+    position: fixed;
+    top: 0;
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+}
+
+.navbar,
+.navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-list{
+    gap: 60px;
+}
+
+.home-img img{
+    width: 60px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cart-icon-img img{
+    width: 28px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.icon-profile-img img{
+    width: 16px;
+    height: 20px;
+    cursor: pointer;
+}
