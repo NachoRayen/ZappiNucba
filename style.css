@@ -69,6 +69,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 40px 0;
 
 }
@@ -89,6 +90,7 @@ footer span{
 
 .footer-link {
     display:flex;
+    justify-content:space-between;
     gap: 20px;
 
 }
