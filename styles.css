@@ -39,11 +39,14 @@ body{
 /* CLASE DE IMAGENES POSITION ABSOLUTE */
 .img1{
 
-position: relative;
-top: 35px;
-
+    height:73px;
+    width: 60px;
 }
-
+.img2{
+    position: absolute;
+    height: 72px;
+    width: 58px;
+}
 
 
 .caja span{
