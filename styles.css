@@ -108,6 +108,7 @@ main {
 .hero_info h3 {
   font-size: 15px;
   font-weight: 400;
+  opacity: 0.8;
 }
 .hero_info a {
   background: var(--gradient-primary);
