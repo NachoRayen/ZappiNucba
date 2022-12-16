@@ -16,6 +16,9 @@ body{
     
 
 }
+h3{
+    color: #ffffff;
+}
 .categories-cajas{
     padding: 0 60px;
     max-width: 1400px;
@@ -28,13 +31,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-   
     background: #252525; 
     justify-content: end;
     border-radius: 5px;
     gap: 5px;
     height: 140px;
-    width: 110px;
+    width: 115px;
+    font-size: 14px;
 }
 
 /* CLASE DE IMAGENES POSITION ABSOLUTE */
@@ -46,11 +49,66 @@ body{
 }
 .img2{
     position: absolute;
-    height: 72px;
-    width: 58px;
+    height: 73px;
+    width: 60px;
+    top: 88px;
     left: 100px;
-    opacity: 15%;
-  
+    opacity: 40%;
+    filter: blur(2px);
+}
+.img3{
+    position: absolute;
+    height: 80px;
+    width: 79px;
+    top: 80px;
+    left: 276px;
+    opacity: 40%;
+    filter: blur(2px);
+}
+.img4{
+    position: absolute;
+    height: 80px;
+    width: 79px;
+    top: 80px;
+    left: 463px;
+    opacity: 40%;
+    filter: blur(2px);
+}
+.img5{
+    position: absolute;
+    height: 80px;
+    width: 79px;
+    top: 80px;
+    left: 648px;
+    opacity: 40%;
+    filter: blur(2px);
+}
+.img6{
+    position: absolute;
+    height: 80px;
+    width: 79px;
+    top: 80px;
+    left: 836px;
+    opacity: 40%;
+    filter: blur(2px);
+}
+.img7{
+    position: absolute;
+    height: 80px;
+    width: 79px;
+    top: 80px;
+    left: 1022px;
+    opacity: 40%;
+    filter: blur(2px); 
+}
+.img8{
+    position: absolute;
+    height: 84px;
+    width: 79px;
+    top: 80px;
+    left: 1204px;
+    opacity: 40%;
+    filter: blur(2px); 
 }
 
 
