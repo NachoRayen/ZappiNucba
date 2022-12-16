@@ -1,53 +1,208 @@
+:root {
+  --background: #131415;
+  --yellow: #ffa400;
+  --text-red: #fc2933;
+  --white: #ffffff;
+  --gradient-primary: linear-gradient(
+    90deg,
+    rgba(255, 161, 0, 1) 0%,
+    rgba(251, 16, 61, 1) 100%
+  );
+  --dark-gray: #252525;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
 }
 
-header{
-    background-color: #131415;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 65px;
-    padding: 0px 30px;
-    position: fixed;
-    top: 0;
+body {
+  background-color: var(--background);
 }
 
-.logo{
-    width: 45px;
-    height: 45px;
+header {
+  background-color: #131415;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding: 0px 30px;
+  position: sticky;
+  top: 0;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
 }
 
 .navbar,
-.navbar-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar-list{
-    gap: 60px;
+.navbar-list {
+  gap: 60px;
 }
 
-.home-img img{
-    width: 60px;
-    height: 20px;
-    cursor: pointer;
+.home-img img {
+  width: 60px;
+  height: 20px;
+  cursor: pointer;
 }
 
-.cart-icon-img img{
-    width: 28px;
-    height: 26px;
-    cursor: pointer;
+.cart-icon-img img {
+  width: 28px;
+  height: 26px;
+  cursor: pointer;
 }
 
-.icon-profile-img img{
-    width: 16px;
-    height: 20px;
-    cursor: pointer;
+.icon-profile-img img {
+  width: 16px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hero_container {
+  width: 100%;
+  min-height: calc(100vh - 65px);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.hero_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 65%;
+
+  min-height: 500px;
+}
+
+.hero_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  align-items: flex-start;
+  gap: 20px;
+  width: 50%;
+}
+.hero_info div h1 {
+  font-size: 64px;
+}
+.hero_info div h2 {
+  font-size: 56px;
+}
+.hero_info h3 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.hero_info a {
+  background: var(--gradient-primary);
+  display: inline;
+  padding: 14px 35px;
+  border-radius: 10px;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 12px;
+}
+.hero_images {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.hero_images_content {
+  position: relative;
+
+  display: flex;
+  min-width: 250px;
+  max-width: 470px;
+  width: 100%;
+}
+.hero_images_content img {
+  position: absolute;
+  top: 0;
+
+  bottom: 0;
+
+  margin: auto;
+  width: auto;
+
+  object-fit: contain;
+}
+
+.zappi_1 {
+  height: 55%;
+  left: 0;
+}
+.zappi_2 {
+  height: 70%;
+  right: 0;
+}
+.subtitle {
+  font-size: 26px;
+  color: var(--white);
+  font-weight: 100;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+.hero_recomendados {
+  font-size: 15px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+.hero_recomendados_card_container {
+  display: inline-block;
+}
+.hero_recomendados_card {
+  width: 350px;
+  height: 110px;
+  background-color: var(--dark-gray);
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero_recomendados_card img {
+  width: 70px;
+  height: 70px;
+}
+
+.hero_recomendados_info {
+  color: var(--white);
+}
+.hero_recomendados_info span {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+.hero_recomendados_card button {
+  background: var(--gradient-primary);
+  border: none;
+  border-radius: 17.5px;
+  padding: 6px 12px;
+  color: var(--white);
+}
+.hero_recomendados_info p {
+  font-size: 14px;
+  opacity: 0.4;
 }
