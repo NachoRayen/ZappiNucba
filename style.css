@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+:root {
+  ---background: #131415;
+  ---background-cards: #252525;
+  ---amarillo: #ffa400;
+  ---rojo: #fc2933;
+  ---fonts: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(---background);
+  width: 100%;
+  color: var(---fonts);
+}
+
+.lo-mas-popular {
+  margin-left: 5%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 131.02%;
+}
+
+.cards {
+  position: relative;
+  width: 282px;
+  height: 213px;
+  margin-top: 30px;
+  background: #252525;
+  box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pizza {
+  left: 10.25%;
+  right: 74.07%;
+  top: 60.14%;
+  bottom: 34.73%;
+  width: 237px;
+  height: 97px;
+}
+
+.descripcion-pizza {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: flex-start;
+  width: 85%;
+}
+
+.boton {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.descripcion {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.boton-agregar {
+  width: 85px;
+  height: 29px;
+  border-radius: 17.5px;
+  border: none;
+  background: linear-gradient(98.81deg, #ffa100 -0.82%, #ff005c 101.53%);
+  color: var(---fonts);
+  font-weight: 500;
+  cursor: pointer;
+}
+p {
+  font-size: 15px;
+}
+.linea-2 {
+  font-size: 14px;
+  opacity: 0.3;
+}
+
+.precio {
+  font-weight: 700;
+  font-size: 19px;
+  background: linear-gradient(98.81deg, #ffa100 -0.82%, #ff005c 101.53%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
